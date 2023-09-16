@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpnsTrac</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/money-bag-favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="total-balance">
+        <h3>TOTAL BALANCE</h3>
+        <p id="balance"></p>
+      </div>
+      <div class="summary">
+        <div class="total-income">
+          <h3>TOTAL INCOME</h3>
+          <p id="income"></p>
+        </div>
+        <div class="total-expense">
+          <h3>TOTAL EXPENSE</h3>
+          <p id="expense"></p>
+        </div>
+      </div>
+      <div class="transaction-entry">
+        <h2>Recent Transaction</h2>
+        <ul class="recent-transaction" id="recent-transaction">
+          <!-- <li class="list plus">
+            pizza <span>30</span><button class="delete-btn">x</button>
+          </li>
+          <li class="list minus">
+            coke <span>40</span><button class="delete-btn">x</button>
+          </li>
+          <li class="list plus">
+            bicycle <span>20</span><button class="delete-btn">x</button>
+          </li> -->
+        </ul>
+      </div>
+      <form action="#" id="form">
+        <div class="form-control">
+          <label for="transaction"> Transaction </label>
+          <input type="text" id="transaction" placeholder="Enter Description" />
+        </div>
+        <div class="form-control">
+          <label for="amount">
+            Amount
+            <small
+              >( '-'negative - expense | '+'positive - income )</small
+            ></label
+          >
+          <input type="number" id="amount" placeholder="Enter Amount" />
+        </div>
+        <button class="btn" type="submit">Update</button>
+      </form>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
